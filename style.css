@@ -368,8 +368,15 @@ nav .left-half .home-icon:hover {
     top: 7.5rem;
     /* Adjusted to sit perfectly on the image */
     right: 1.2rem;
+}
 
+.music-player-btn i {
+    color: black;
+    position: relative;
+    z-index: 10;
+}
 
+.music-player-btn {
     /* Animation Initial State */
     opacity: 0;
     transform: translateY(10px);
@@ -394,44 +401,49 @@ nav .left-half .home-icon:hover {
 
 
 /* for player */
-.player-bar{
-    width:100%;
-    height:5rem;
-    margin-top:0.2rem;
-    display:flex;
+.player-bar {
+    width: 100%;
+    height: 5rem;
+    margin-top: 0.2rem;
+    display: flex;
     justify-content: center;
     align-items: center;
 }
-.music-controller{
+
+.music-controller {
     display: flex;
-    flex-direction: column;    
+    flex-direction: column;
     align-items: center;
-    width:50%; 
+    width: 50%;
 
 
 }
 
-.player{
+.player {
     display: flex;
     align-items: center;
     margin-bottom: 0.5rem;
 }
-.player-btn{
-    font-size:1.1rem;
-    margin:0.4rem 1rem;
-    cursor:pointer;
-    color:rgb(232, 232, 232);
+
+.player-btn {
+    font-size: 1.1rem;
+    margin: 0.4rem 1rem;
+    cursor: pointer;
+    color: rgb(232, 232, 232);
 
 }
-.player-btn:hover{
-    color:white;
-    transform:scale(1.02);
+
+.player-btn:hover {
+    color: white;
+    transform: scale(1.02);
 }
-#play{
-    font-size:1.8rem;
-    color:white;
+
+#play {
+    font-size: 1.8rem;
+    color: white;
 }
-#progressBar{
+
+#progressBar {
     appearance: none;
     width: 600px;
     height: 3px;
@@ -439,31 +451,35 @@ nav .left-half .home-icon:hover {
     border-radius: 5px;
     cursor: pointer;
 }
-input[type="range"]::-webkit-slider-thumb{
-    width:10px;
-    height:10px;
+
+input[type="range"]::-webkit-slider-thumb {
+    width: 10px;
+    height: 10px;
     appearance: none;
     background-color: white;
     border-radius: 10px;
 }
-.now-bar{
-    color:white;
+
+.now-bar {
+    color: white;
     display: flex;
     align-items: center;
-    gap:1rem;
+    gap: 1rem;
 }
-.img-title-info{
-    font-size:0.9rem;
+
+.img-title-info {
+    font-size: 0.9rem;
 }
-.img-description-info{
-    font:0.8rem;
-    color:rgb(192,192,192);
+
+.img-description-info {
+    font: 0.8rem;
+    color: rgb(192, 192, 192);
     margin-left: 1rem;
 }
 
-.player-bar img{
-    height:4rem;
-    width:4rem;
+.player-bar img {
+    height: 4rem;
+    width: 4rem;
     border-radius: 10px;
     padding: 0.3rem;
 }
